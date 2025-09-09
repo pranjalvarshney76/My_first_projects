@@ -1,0 +1,199 @@
+<!--Books Review Page-->
+<!--only basic html-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Book Review Page</title>
+        <style>
+            table, tr, th, td {
+                border: 2px solid black;
+                border-collapse: collapse;
+            }
+        </style>
+    </head>
+    <body id="top" style="font-family: Verdana, Geneva, Tahoma, sans-serif; font-size: 16px; background-color: cornsilk;">
+        <h1 style="text-align: center;">A GOOD GIRL'S GUIDE TO MURDER</h1>
+        <h2 style="text-align: center;">Author : HOLLY JACKSON</h2>
+
+        <div align="center">
+            <img src="book cover page.jpg" alt="book cover" width="200" border="2px">
+        </div>
+
+        <!-- 📌 Jump Menu -->
+        <h3>Jump to:</h3>
+        <ul>
+            <li><a href="#summary">Summary</a></li>
+            <li><a href="#highlights">Highlights</a></li>
+            <li><a href="#characters">Main Characters</a></li>
+            <li><a href="#table">Book Info Table</a></li>
+            <li><a href="#reviewform">Review Form</a></li>
+        </ul>
+
+        <h2 id="summary">Summary</h2>
+        <p>
+            Pretty and popular high school senior Andie Bell was murdered by her boyfriend, Sal Singh, who then killed himself. It was all anyone could talk about.
+            And five years later, Pip sees how the tragedy still haunts her town.<br><br>
+            But she can't shake the feeling that there was more to what happened that day. She knew Sal when she was a child, and he was always so kind to her.
+            How could he possibly have been a killer?<br><br>
+            Now a senior herself, Pip decides to reexamine the closed case for her final project, at first just to cast doubt on the original investigation.
+            But soon she discovers a trail of dark secrets that might actually prove Sal innocent . . . and the line between past and present begins to blur. 
+            Someone in Fairview doesn't want Pip digging around for answers, and now her own life might be in danger.  
+        </p>
+        <p><a href="#top">Back to top</a></p>
+
+        <h2 id="highlights">Highlights</h2>
+        <ol>
+            <li>A fresh twist on the classic whodunit mystery.</li>
+            <li>Strong, relatable protagonist (Pip) with sharp intelligence.</li>
+            <li>Realistic teenage friendships and family dynamics.</li>
+            <li>Fast-paced writing that keeps you hooked.</li>
+            <li>Layered clues and red herrings that challenge the reader.</li>
+            <li>Chilling small-town atmosphere where everyone hides something.</li>
+            <li>An ending that leaves you shocked and hungry for the next book.</li>
+        </ol>
+        <p><a href="#top">Back to top</a></p>
+
+        <h2 id="characters">Main Characters</h2>
+        <ul>
+            <li><b>Pip Fitz-Amobi</b> – The determined and smart student who takes up the case.</li>
+            <li><b>Ravi Singh</b> – Sal’s younger brother, who becomes Pip’s unexpected ally.</li>
+            <li><b>Sal Singh</b> – The boy accused of the murder, whose truth Pip wants to uncover.</li>
+            <li><b>Andie Bell</b> – The missing girl whose case shook the whole town.</li>
+        </ul>
+        <p><a href="#top">Back to top</a></p>
+
+        <h2 id="table">Book info table</h2>
+        <table>
+            <tr>
+                <th height="60">Title</th>
+                <td height="60">A Good Girl's Guide to Murder</td>
+            </tr>
+            <tr>
+                <th height="60">Author</th>
+                <td height="60">Holly Jackson</td>
+            </tr>
+            <tr>
+                <th height="60">Series</th>
+                <td height="60">A Good Girl's Guide to Murder (book #1)</td>
+            </tr>
+            <tr>
+                <th height="60">Genre</th>
+                <td height="60">Young Adult, Mystery, Thriller</td>
+            </tr>
+            <tr>
+                <th height="60">Publisher</th>
+                <td height="60">Electric Monkey(UK), Delacorte Press</td>
+            </tr>
+            <tr>
+                <th height="60">Language</th>
+                <td height="60">English</td>
+            </tr>
+            <tr>
+                <th height="60">Format</th>
+                <td height="60">Hardcover, Paperback, Audiobook, ebook</td>
+            </tr>
+            <tr>
+                <th height="60">Rating</th>
+                <td height="60">4.5/5 ★</td>
+            </tr>
+        </table>
+        <p><a href="#top">Back to top</a></p>
+
+        <h2 id="reviewform">Review Form</h2>
+        <form action="/submit-review" method="post">
+            <input type="hidden" name="book_title" value="A Good Girl’s Guide to Murder">
+
+            <fieldset>
+                <legend>Reader Details</legend>
+
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                <br><br>
+
+                <label for="email">Email (optional):</label>
+                <input type="email" id="email" name="email" placeholder="you@example.com">
+            </fieldset>
+
+            <br>
+
+            <fieldset>
+                <legend>Your Review</legend>
+
+                <p>Rating:</p>
+                <input type="radio" id="rate1" name="rating" value="1" required>
+                <label for="rate1">1 ★</label>
+
+                <input type="radio" id="rate2" name="rating" value="2">
+                <label for="rate2">2 ★★</label>
+
+                <input type="radio" id="rate3" name="rating" value="3">
+                <label for="rate3">3 ★★★</label>
+
+                <input type="radio" id="rate4" name="rating" value="4">
+                <label for="rate4">4 ★★★★</label>
+
+                <input type="radio" id="rate5" name="rating" value="5">
+                <label for="rate5">5 ★★★★★</label>
+                <br><br>
+
+                <label for="favchar">Favorite Character:</label>
+                <select id="favchar" name="favorite_character" required>
+                    <option value="" selected disabled>-- select one --</option>
+                    <option value="Pip Fitz-Amobi">Pip Fitz-Amobi</option>
+                    <option value="Ravi Singh">Ravi Singh</option>
+                    <option value="Sal Singh">Sal Singh</option>
+                    <option value="Andie Bell">Andie Bell</option>
+                    <option value="Other">Other</option>
+                </select>
+                <br><br>
+
+                <label for="title">Review Title:</label>
+                <input type="text" id="title" name="review_title" placeholder="e.g., Gripping and clever!" required>
+                <br><br>
+
+                <label for="comments">Your Comments (no spoilers please):</label><br>
+                <textarea id="comments" name="comments" rows="6" cols="50" placeholder="Write your spoiler-free thoughts here..." required></textarea>
+                <br><br>
+
+                <label for="finishdate">Date You Finished:</label>
+                <input type="date" id="finishdate" name="finished_on">
+                <br><br>
+
+                <input type="checkbox" id="spoilerfree" name="spoiler_free" value="yes" checked>
+                <label for="spoilerfree">I confirm this review is spoiler-free</label>
+                <br><br>
+
+                <input type="checkbox" id="consent" name="consent" value="agree" required>
+                <label for="consent">I agree to share this review on the site</label>
+                <br><br>
+                <h3>Did you enjoy this review?</h3>
+                <input type="radio" id="enjoyYes" name="enjoyed" value="yes" required>
+                <label for="enjoyYes">Yes</label>
+
+                <input type="radio" id="enjoyNo" name="enjoyed" value="no">
+                <label for="enjoyNo">No</label>
+
+                <br><br>
+
+            </fieldset>
+
+            <br>
+
+            <input type="submit" value="Submit Review">
+            <input type="reset" value="Reset Form">
+        </form>
+        <p><a href="#top">Back to top</a></p>
+
+        <hr>
+        <p>To buy the book, please visit 
+            <a href="https://www.amazon.in/Good-Girls-Guide-Murder/dp/1405293187" target="_blank">
+                <b>this link</b>
+            </a>
+        </p>
+
+        <p>For more book reviews, please click the button below:</p>
+        <a href="https://www.goodreads.com/" target="_blank">
+            <button style="font-size: 20px; background-color: aqua;">Click me</button>
+        </a>
+    </body>
+</html>
