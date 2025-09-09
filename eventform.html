@@ -1,0 +1,138 @@
+<!--EVENT REGISTRATION FORM-->
+<!--Basic HTML-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Registration form</title>
+    </head>
+    <body style="background-color: lavender; font-family: Arial, sans-serif;">
+        <h1 style="text-align: center; color: blue; text-decoration: underline;">Event Registration Form</h1>
+        <form action="/submit" method="post" >
+            <fieldset>
+                <legend>Basic Details</legend>
+            
+            <label for="name">Full Name: </label>
+            <input type="text" id="name" name="name" placeholder="Shinchan Nohara">
+            <br><br>
+            <label for="email">E-mail: </label>
+            <input type="email" id="email" name="email" placeholder="shinchannohara5@gmail.com">
+            <br><br>
+            <label for="phone">Phone Number: </label>
+            <input type="tel" id="phone" name="phone" placeholder="123456789">
+            <br><br>
+            <label for="dob">Date of Birth: </label>
+            <input type="date" id="dob" name="dob">
+            <br><br>
+            <label for="gender">Gender: </label>
+            <label for="male">MALE</label>
+            <input type="radio" id="male" name="gender" value="gender">
+            <label for="female">FEMALE</label>
+            <input type="radio" id="female" name="gender" value="gender">
+            <label for="trans">TRANSGENDER</label>
+            <input type="radio" id="trans" name="gender" value="gender">
+            <label for="others">Prefer not to say</label>
+            <input type="radio" id="others" name="gender" value="gender">
+            </fieldset>
+            <br><br>
+            <fieldset>
+                <legend>Event Related</legend>
+                <label for="eventtype">Event Category: </label>
+                <select id="eventtype" name="eventtype">
+                    <option value="workshop">Workshop</option>
+                    <option value="hackathon">Hackathon</option>
+                    <option value="seminar">Seminar</option>
+                    <option value="ideathon">Ideathon</option>
+                </select>
+                <br><br>
+                <label for="timing">Prefered event timing: </label>
+                <label for="morning">Morning</label>
+                <input type="radio" id="morning" name="timing">
+                <label for="evening">Evening</label>
+                <input type="radio" id="evening" name="timing">
+                <br><br>
+                <label for="tickettype">Ticket Type: </label>
+                <label for="free">Free</label>
+                <input type="radio" id="free" name="tickettype">
+                <label for="paid">Paid</label>
+                <input type="radio" id="paid" name="tickettype">
+                <label for="vip">VIP</label>
+                <input type="radio" id="vip" name="tickettype">
+            </fieldset>
+            <br><br>
+            <fieldset>
+                <legend>Skills & Background</legend>
+                <label for="college">College/organisation Name: </label>
+                <input type="text" id="college">
+                <br><br>
+                <label for="year">Year of Study: </label>
+                <select id="year" name="year">
+                    <option value="1">1st</option>
+                    <option value="2">2nd</option>
+                    <option value="3">3rd</option>
+                    <option value="4">4th</option>
+                </select>
+                <br><br>
+                <label for="skills">Skills: </label>
+                <label for="python">Python</label>
+                <input type="checkbox" id="python" name="skills">
+                <label for="wad">Web Application & Development</label>
+                <input type="checkbox" id="wad" name="skills">
+                <label for="ds">Data Science</label>
+                <input type="checkbox" id="ds" name="skills">
+                <label for="java">Java</label>
+                <input type="checkbox" id="java" name="skills">
+                <label for="ml">Machine Learning</label>
+                <input type="checkbox" id="ml" name="skills">
+                <label for="cs">Cyber Security</label>
+                <input type="checkbox" id="cs" name="skills">
+            </fieldset>
+            <br><br>
+            <fieldset>
+                <legend>Preferences</legend>
+                <label for="size">Tshirt Size: </label>
+                <label for="s">S</label>
+                <input type="radio" id="s" name="size">
+                <label for="m">M</label>
+                <input type="radio" id="m" name="size">
+                <label for="l">L</label>
+                <input type="radio" id="l" name="size">
+                <label for="xl">XL</label>
+                <input type="radio" id="xl" name="size">
+                <label for="xxl">XXL</label>
+                <input type="radio" id="xxl" name="size">
+                <br><br>
+                <label for="meal">Meal Preference: </label>
+                <select id="meal" name="meal">
+                    <option value="veg">Veg</option>
+                    <option value="nonveg">Non-Veg</option>
+                </select>
+                <br><br>
+                <label for="accommodation">Accommodation Required? </label>
+                <label for="yes">YES</label>
+                <input type="radio" id="yes" name="accommodation">
+                <label for="no">NO</label>
+                <input type="radio" id="no" name="accommodation">
+            </fieldset>
+            <br><br>
+            <fieldset>
+                <legend>Other</legend>
+                <label for="emergency">Emergency Contact info: </label>
+                <br>
+                <label for="name">Name: </label>
+                <input type="text" id="name" name="emergency">
+                <label for="number">Phone no. : </label>
+                <input type="tel" id="number" name="emergency">
+                <br><br>
+                <label for="request">Special request/comments: </label>
+                <textarea id="requests" name="requests" rows="6" cols="50" placeholder="any accessibility needs (wheelchair access, allergies)"></textarea>
+            </fieldset>
+            <br><br>
+            <input type="checkbox" id="terms" name="terms" required>
+            <label for="terms">I agree to the Terms & Conditions</label>
+            <br><br>
+            <input type="reset">
+            <br><br>
+            <input type="submit">
+        </form>
+    </body>
+</html>
