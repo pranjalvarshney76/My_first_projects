@@ -12,7 +12,7 @@ I created these while learning programming basics and web development.
 - 📖 Book Review Page (A Good Girl's Guide to Murder)  
 - 📝 Event Registration Form  
 
-## 🔹 Python Projects
+## 🔹 Python Code
 - 🔢 Basic Calculator  
 - 🔄 Even/Odd Checker  
 - 🏆 Grading System  
